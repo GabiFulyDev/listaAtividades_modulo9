@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    background-color: darksalmon;
+    padding: 16px 0;
+    color: rgb(252, 251, 250);
+    display: flex;
+    border-bottom: 16px solid rgb(15, 14, 14) ;
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic
+
+}
+
+header button {
+    margin-left: 16px;
+    font-style: italic
+}
+
+form {
+    background-color: antiquewhite;
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+}
+
+form h2 {
+    margin-bottom: 20px;
+}
+
+input, button {
+    padding: 8px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#botao-cancelar {
+    background-color: grey;
+}
+
+ul {
+    display:contents;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+
+.overlay-imagem-link {
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+}
+
+.overlay-imagem-link a {
+    color: antiquewhite;
+    text-decoration: line-through;
+
+}
+
+ul li:hover .overlay-imagem-text {
+    opacity: 1;
+    transition: all ease 1s;
+    text-decoration: line-through;
+    
+}
+
+.ul li:hover {
+    text-decoration: line-through;
+    color: rgb(17, 16, 16);
+}
