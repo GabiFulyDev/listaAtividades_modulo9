@@ -54,35 +54,9 @@ ul {
     display:contents;
     text-align: center;
     font-size: 20px;
-    cursor: pointer;
-    
+    cursor: pointer;   
 }
 
-
-.overlay-imagem-link {
-    padding: 16px;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    opacity: 0;
-}
-
-.overlay-imagem-link a {
-    color: antiquewhite;
+.selected {
     text-decoration: line-through;
-
-}
-
-ul li:hover .overlay-imagem-text {
-    opacity: 1;
-    transition: all ease 1s;
-    text-decoration: line-through;
-    
-}
-
-.ul li:hover {
-    text-decoration: line-through;
-    color: rgb(17, 16, 16);
 }

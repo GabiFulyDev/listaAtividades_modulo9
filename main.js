@@ -9,16 +9,24 @@ $(document).ready(function(){
     })
 
     
+
+})
+
     $('form').on('submit',function(e) {
         e.preventDefault();
         const nomeAtividadeNova = $('#endereco-atividade-nova').val();
-        const novoItem = $('<li></li>');
+        const novoItem = $('<li> </li>');
+
         $(`
-            <div class="overlay-imagem-text">
+            <li>
             <a ="${nomeAtividadeNova}" target="text-decoration" title=" Clicar para marcar como realizado" > ${nomeAtividadeNova}</a>
-            </div>
+            </li>
         `).appendTo(novoItem);
         $(novoItem).appendTo('ul');
         $('#endereco-atividade-nova').val('');
+
+        $('li').click(function() {
+            $(novoItem).addClass('selected');
+        })
     })
-})
+
