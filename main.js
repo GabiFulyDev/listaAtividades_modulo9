@@ -25,7 +25,7 @@ $(document).ready(function(){
         $(novoItem).appendTo('ul');
         $('#endereco-atividade-nova').val('');
 
-        $('li').click(function() {
+        $(novoItem).click(function() {
             $(novoItem).addClass('selected');
         })
     })
